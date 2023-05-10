@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "containment-container"
+version = "0.1.0"
+description = "A simple FastAPI app for local contained storage of data via sqlite."
+authors = ["eric-forte-elastic <eric.forte@elastic.co>"]
+license = "Apache License 2.0"
+readme = "README.md"
+packages = [{include = "containment_container"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+python-multipart = "^0.0.6"
+fastapi = "^0.95.1"
+uvicorn = "^0.22.0"
+pydantic = "^1.10.7"
+structlog = "^23.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
